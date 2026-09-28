@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ghat Road Coffee — Practice Deployment Site</title>
+  <meta name="description" content="A dummy website for practicing deployment.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="logo" href="#">Ghat Road Coffee</a>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Small-batch coffee, roasted every morning.</h1>
+      <p>A fictional cafe site built only to practice deploying to Netlify, Vercel, GitHub Pages and more.</p>
+      <a class="btn" href="#menu">See the menu</a>
+      <p class="status">Deploy check: <span id="deploy-time">loading…</span></p>
+    </section>
+
+    <section id="menu">
+      <h2>Menu</h2>
+      <ul class="menu" id="menu-list"></ul>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>Ghat Road Coffee is not a real business. If you can read this on a public URL, your deployment worked.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <label>Name <input name="name" required></label>
+        <label>Message <textarea name="message" rows="3" required></textarea></label>
+        <button class="btn" type="submit">Send message</button>
+        <p id="form-msg" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>© 2026 Ghat Road Coffee (dummy site)</footer>
+  <script src="script.js"></script>
+</body>
+</html>
